@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="cyan">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghavendra A N — AIML & DevOps Engineer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── CURSOR ──────────────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- ─── NAVBAR ─────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">AC<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#blog" class="nav-link">Blog</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-btn" id="themeToggle" title="Toggle theme">
+        <span class="theme-icon">◑</span>
+      </button>
+      <div class="accent-picker" id="accentPicker">
+        <span class="accent-dot" data-accent="cyan"></span>
+        <span class="accent-dot" data-accent="green"></span>
+        <span class="accent-dot" data-accent="purple"></span>
+        <span class="accent-dot" data-accent="orange"></span>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#blog" class="nav-link">Blog</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ───────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="glow-orb orb1"></div>
+      <div class="glow-orb orb2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag fade-up delay-0">
+        <span class="tag-dot"></span> Available for work
+      </div>
+      <h1 class="hero-name fade-up delay-1">
+        Raghavendra<br/><span class="accent">A N</span>
+      </h1>
+      <p class="hero-role fade-up delay-2">
+        <span class="role-prefix">—</span> AIML &amp; DevOps Engineer
+      </p>
+      <p class="hero-bio fade-up delay-3">
+        I build intelligent systems and scalable infrastructure — from training ML models
+        to shipping them in production with CI/CD pipelines and Kubernetes.
+        Based in <span class="accent">Mysuru, India</span>.
+      </p>
+      <div class="hero-cta fade-up delay-4">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-socials fade-up delay-5">
+        <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-link" title="X/Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="mailto:raghavendra.an@example.com" class="social-link" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual fade-up delay-2">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring ring2"></div>
+        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Raghavendra&backgroundColor=0d1117" alt="Raghavendra A N" class="avatar-img" />
+        <div class="avatar-badge">
+          <span>🤖</span>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Exp</span></div>
+        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Projects</span></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Clients</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ──────────────────────────────────────── -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">01 / ABOUT</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <p>Hi! I'm Raghavendra — an AIML & DevOps Engineer based in Mysuru, Karnataka. I specialise in designing and deploying machine learning pipelines, building intelligent applications, and automating infrastructure with modern DevOps practices.</p>
+          <p>When I'm not training models or writing Kubernetes manifests, I'm exploring the latest in generative AI, writing technical deep-dives, and contributing to open-source ML tooling.</p>
+          <div class="edu-block">
+            <h3>Education</h3>
+            <div class="edu-item">
+              <span class="edu-year">2020–2024</span>
+              <div>
+                <strong>B.E. in Computer Science &amp; Engineering</strong>
+                <span class="edu-school">Visvesvaraya Technological University, Karnataka</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <span class="edu-year">2024</span>
+              <div>
+                <strong>AWS Certified DevOps Engineer</strong>
+                <span class="edu-school">Amazon Web Services</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <span class="edu-year">2024</span>
+              <div>
+                <strong>TensorFlow Developer Certificate</strong>
+                <span class="edu-school">Google Developers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-block fade-up delay-1">
+          <h3>Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>AI / ML</h4>
+              <div class="skill-tags">
+                <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span>
+                <span class="tag">Scikit-learn</span><span class="tag">HuggingFace</span><span class="tag">OpenCV</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>DevOps & Cloud</h4>
+              <div class="skill-tags">
+                <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span>
+                <span class="tag">GitHub Actions</span><span class="tag">AWS</span><span class="tag">GCP</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Backend & Data</h4>
+              <div class="skill-tags">
+                <span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">PostgreSQL</span>
+                <span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Kafka</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>AIML</span><div class="bar"><div class="bar-fill" style="--pct:88%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>DevOps</span><div class="bar"><div class="bar-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Backend</span><div class="bar"><div class="bar-fill" style="--pct:75%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ───────────────────────────────────── -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">02 / PROJECTS</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+      <div class="project-filters fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="aiml">AI / ML</button>
+        <button class="filter-btn" data-filter="devops">DevOps</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card fade-up" data-category="aiml">
+          <div class="project-img">
+            <div class="project-gradient g1"></div>
+            <div class="project-label">AI / ML</div>
+          </div>
+          <div class="project-body">
+            <h3>SentinelAI — Anomaly Detector</h3>
+            <p>Real-time anomaly detection for microservice metrics using LSTM autoencoders. Deployed on Kubernetes with Grafana dashboards and Slack alerting.</p>
+            <div class="project-tech">
+              <span>Python</span><span>TensorFlow</span><span>Kubernetes</span><span>Prometheus</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>GitHub</a>
+              <a href="#" class="btn-sm accent-btn" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up delay-1" data-category="devops">
+          <div class="project-img">
+            <div class="project-gradient g2"></div>
+            <div class="project-label">DevOps</div>
+          </div>
+          <div class="project-body">
+            <h3>InfraForge — IaC Automation</h3>
+            <p>Full AWS infrastructure-as-code suite using Terraform + Ansible. Provisions VPCs, EKS clusters, RDS, and S3 with one-command bootstrapping and GitOps.</p>
+            <div class="project-tech">
+              <span>Terraform</span><span>Ansible</span><span>AWS EKS</span><span>GitHub Actions</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>GitHub</a>
+              <a href="#" class="btn-sm accent-btn" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up delay-2" data-category="aiml">
+          <div class="project-img">
+            <div class="project-gradient g3"></div>
+            <div class="project-label">AI / ML</div>
+          </div>
+          <div class="project-body">
+            <h3>DocuMind — RAG Q&amp;A Bot</h3>
+            <p>Retrieval-Augmented Generation chatbot for enterprise document search. Uses LangChain, FAISS vector store, and a fine-tuned LLaMA-2 served via FastAPI.</p>
+            <div class="project-tech">
+              <span>LangChain</span><span>LLaMA-2</span><span>FAISS</span><span>FastAPI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>GitHub</a>
+              <a href="#" class="btn-sm accent-btn" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="devops">
+          <div class="project-img">
+            <div class="project-gradient g4"></div>
+            <div class="project-label">DevOps</div>
+          </div>
+          <div class="project-body">
+            <h3>PipelineX — CI/CD Platform</h3>
+            <p>Self-hosted CI/CD orchestration platform with Docker-in-Docker build agents, parallel pipelines, secrets management, and a real-time log streaming UI.</p>
+            <div class="project-tech">
+              <span>Docker</span><span>Go</span><span>React</span><span>Redis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>GitHub</a>
+              <a href="#" class="btn-sm accent-btn" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up delay-1" data-category="fullstack">
+          <div class="project-img">
+            <div class="project-gradient g5"></div>
+            <div class="project-label">Full Stack</div>
+          </div>
+          <div class="project-body">
+            <h3>MLFlow Dashboard — Experiment Tracker</h3>
+            <p>Custom ML experiment tracking dashboard with run comparison, metric visualisation, model registry, and one-click deployment to AWS SageMaker.</p>
+            <div class="project-tech">
+              <span>Python</span><span>MLflow</span><span>React</span><span>AWS SageMaker</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>GitHub</a>
+              <a href="#" class="btn-sm accent-btn" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up delay-2" data-category="aiml">
+          <div class="project-img">
+            <div class="project-gradient g6"></div>
+            <div class="project-label">AI / ML</div>
+          </div>
+          <div class="project-body">
+            <h3>VisionGuard — Object Detection</h3>
+            <p>Edge-deployable object detection and intrusion alert system using YOLOv8 and OpenCV. Runs on Raspberry Pi with MQTT alerting and a real-time web dashboard.</p>
+            <div class="project-tech">
+              <span>YOLOv8</span><span>OpenCV</span><span>MQTT</span><span>Raspberry Pi</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>GitHub</a>
+              <a href="#" class="btn-sm accent-btn" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BLOG ───────────────────────────────────────── -->
+  <section class="section blog-section" id="blog">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">03 / BLOG</span>
+        <h2 class="section-title">Technical Writing</h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card fade-up">
+          <div class="blog-meta">
+            <span class="blog-date">Apr 8, 2025</span>
+            <span class="blog-tag">AI / ML</span>
+          </div>
+          <h3>Building a Production RAG Pipeline with LangChain &amp; FAISS</h3>
+          <p>Step-by-step guide to building a Retrieval-Augmented Generation system — from document ingestion and chunking to vector search and LLM response generation at scale.</p>
+          <a href="#" class="blog-read">Read article →</a>
+        </article>
+        <article class="blog-card fade-up delay-1">
+          <div class="blog-meta">
+            <span class="blog-date">Mar 20, 2025</span>
+            <span class="blog-tag">DevOps</span>
+          </div>
+          <h3>Kubernetes at Home: Running a K3s Cluster on Raspberry Pi</h3>
+          <p>How I built a 4-node K3s cluster, set up GitOps with Flux CD, and deployed real ML inference workloads — all for under ₹8,000.</p>
+          <a href="#" class="blog-read">Read article →</a>
+        </article>
+        <article class="blog-card fade-up delay-2">
+          <div class="blog-meta">
+            <span class="blog-date">Feb 28, 2025</span>
+            <span class="blog-tag">MLOps</span>
+          </div>
+          <h3>From Notebook to Production: MLflow + FastAPI + Docker</h3>
+          <p>A practical MLOps walkthrough — experiment tracking with MLflow, model serving with FastAPI, containerisation with Docker, and monitoring with Prometheus.</p>
+          <a href="#" class="blog-read">Read article →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─────────────────────────────────────── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">04 / CONTACT</span>
+        <h2 class="section-title">Let's Build Together</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-up">
+          <p>Have a project in mind? Looking for a developer to join your team? I'm always open to discussing new opportunities.</p>
+          <div class="contact-items">
+            <a href="mailto:raghavendra.an@example.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              <span>raghavendra.an@example.com</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-item">
+              <span class="contact-icon">in</span>
+              <span>linkedin.com/in/raghavendra-an</span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Mysuru, Karnataka, India</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form fade-up delay-1" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn-primary submit-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader" hidden>Sending…</span>
+          </button>
+          <div class="form-success" id="formSuccess" hidden>
+            <span>✓</span> Message sent! I'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">AC<span class="accent">.</span></span>
+      <p class="footer-text">Built with HTML, CSS & JS — no frameworks, just craft.</p>
+      <p class="footer-copy">© 2025 Raghavendra A N. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
